@@ -1,0 +1,72 @@
+.navbar {
+    background-color: #96D9DD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Familjen Grotesk';
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar .nav-links {
+    padding-top: 200px; /* Adicione a margem ao elemento de envoltório */
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px; /* Ajuste conforme necessário */
+    font-size: 18px; /* Ajusta o tamanho da fonte para 18 */
+}
+
+.navbar .allbooks, .navbar .creading, .navbar .completed, .navbar .plantoread  {
+    text-decoration:none;
+    color: black;
+    margin: 15px 100px 0 100px; /* Define as margens superior, direita, inferior e esquerda */
+}
+
+
+.navbar .allbooks:hover, .navbar .creading:hover, .navbar .completed:hover, .navbar .plantoread:hover {
+    color: black; /* Muda a cor para preto */
+    font-weight: bold; /* Deixa o texto em negrito */
+ }
+ 
+
+ .navbar .addnewbook {
+    background-color: #4DAAC8; /* Muda a cor de fundo para azul claro */
+    color: black; /* Muda a cor do texto para azul escuro */
+    border: none; /* Remove a borda */
+    padding: 5px 20px; /* Adiciona um padding ao redor do texto */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Adiciona uma transição suave */
+    cursor: pointer;
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-family: 'Familjen Grotesk';
+    font-size: 18px;
+}
+
+.navbar .search-bar {
+    width: 200px; /* Ajuste conforme necessário */
+    box-sizing: border-box;
+    border: 2px solid #4DAAC8; /* Cor da borda */
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #0EA1A1;
+    background-image: url('/src/app/assets/lupa.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 2px 20px 2px 10px;
+    transition: width 0.4s ease-in-out;
+    margin-right: 20px;
+    font-family: 'Familjen Grotesk';
+}
+
+

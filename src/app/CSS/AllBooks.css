@@ -1,0 +1,72 @@
+.main-allbooks{
+    width: 90%;
+    margin: auto;
+}
+
+.livro-todo {
+    margin-bottom: 4%;
+}
+
+.atributos{
+    margin-bottom: 50px;
+
+}
+
+.livros-atributos{
+    margin-top: 20px;
+    font-weight: 700;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.atributos-direita {
+    margin-left: 30%;
+}
+
+.rating, .status, .progress{
+    display: inline;
+    margin-right: 100%;
+
+}
+
+.userR{
+
+}
+
+.capa-livro, .opiniao-livro, .estrelas-livro, .paginas-livro, .situacao-livro {
+    display: inline-block;
+}
+.opiniao-livro{
+    width: 27%;
+}
+
+.titulo-livro {
+    font-size: 18px;
+    margin: auto;
+    height: 50px; /* Adicione uma altura fixa aqui */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.imagem-livro {
+    margin: auto;
+    margin-left: 95%;
+
+}
+
+.editar {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.edit{
+    margin-right: 50%;
+}
+
+.opiniao-livro{
+    margin-left: 40%;
+    margin: auto;
+}
