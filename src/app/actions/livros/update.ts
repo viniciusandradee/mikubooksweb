@@ -2,8 +2,8 @@
 
 import { redirect } from "next/navigation"
 
-export async function create(prevState: any, formData: FormData){
-    await new Promise( r => setTimeout(r, 1000))
+export async function update(prevState: any, formData: FormData){
+    const id = formData.get("id")
 
     const data = {
         nome: formData.get("nome"),
@@ -11,17 +11,17 @@ export async function create(prevState: any, formData: FormData){
     }
 
     const options = {
-        method: "POST",
+        method: "PUT",
         body: JSON.stringify(data),
         headers: {
             'Content-Type': 'application/json'
         }
 
     }
-    const resp = await fetch(process.env.API_BASE_URL + "/categoria", options)
+    const resp = await fetch(`${process.env.API_BASE_URL}/livro/${id}` , options)
 
     if (resp.ok){
-        redirect("/categorias")
+        redirect("/livros")
     }
 
     if(resp.status == 400){
@@ -29,5 +29,5 @@ export async function create(prevState: any, formData: FormData){
             message: "erro de validação"
         }
     }
-    
+
 }

@@ -6,7 +6,7 @@ export async function update(prevState: any, formData: FormData) {
         nome: formData.get('nome'),
         icone: "apple",
     }
-    const response = await fetch(`http://localhost:8080/categoria/${formData.get('id')}`, {
+    const response = await fetch(`http://localhost:8080/livro/${formData.get('id')}`, {
         method: 'PUT',
         body: JSON.stringify(data),
         headers: {
@@ -16,12 +16,12 @@ export async function update(prevState: any, formData: FormData) {
 
     if (!response.ok) {
         return {
-            message: 'Erro ao atualizar categoria'
+            message: 'Erro ao atualizar livro'
         }
     }
 
     if(response.ok){
-        redirect('/categorias')
+        redirect('/livros')
     }
     
 }

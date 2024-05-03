@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MikuBooks",
-  description: "App de controle e avaliação de livros",
+  title: "Money Minder",
+  description: "App de controle de gastos",
 };
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="dark">
       <body className={inter.className}>
         <Providers>
+          <Toaster position="bottom-right" />
           {children}
         </Providers>
       </body>

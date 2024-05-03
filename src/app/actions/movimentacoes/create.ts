@@ -13,8 +13,8 @@ export async function create(prevState: any, formData: FormData){
         descricao: formData.get("descricao"),
         valor: formData.get("valor"),
         tipo: formData.get("tipo"),
-        categoria: {
-            id: formData.get("categoria")
+        livro: {
+            id: formData.get("livro")
         },
         data: formData.get("data"),
     }

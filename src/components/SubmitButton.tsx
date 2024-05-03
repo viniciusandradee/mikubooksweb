@@ -6,6 +6,6 @@ import { useFormStatus } from "react-dom"
 export function SubmitButton(){
     const { pending } = useFormStatus()
     return (
-        <Button type="submit" color="primary" isLoading={pending}>salvar</Button>
+        <Button type="submit" variant="bordered" color="primary" isLoading={pending}>Salvar</Button>
     )
 }

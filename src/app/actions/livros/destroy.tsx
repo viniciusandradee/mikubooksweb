@@ -7,7 +7,7 @@ export async function destroy(id: number){
         method: "DELETE"
     }
 
-    const resp = await fetch(process.env.API_BASE_URL + "/categoria/" + id, options)
+    const resp = await fetch(process.env.API_BASE_URL + "/livro/" + id, options)
 
 
 }
