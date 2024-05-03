@@ -43,11 +43,11 @@ export default function MovimentacaoTable({data}: MovimentacaoTableProps) {
       }, []);
     
     return (
-        <Table aria-label="ultimas movimentações" className="w-[570px]">
+        <Table aria-label="Ultimas movimentações" className="w-[570px]" >
             <TableHeader columns={columns}>
                 {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
             </TableHeader>
-            <TableBody items={data}>
+            <TableBody  items={data}>
                 {(item) => (
                     <TableRow key={item.id}>
                         {(columnKey) => <TableCell>{renderCell(item, columnKey)}</TableCell>}

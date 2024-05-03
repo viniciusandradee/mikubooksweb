@@ -7,7 +7,7 @@ export default async function CadastrarMovimentacoes() {
     const livros = await getLivros()
 
     return (
-        <main className="flex min-h-screen flex-col items-center">
+        <main className="flex min-h-screen  flex-col items-center">
             <NavBar active="movimentacoes" />
 
             <Form livros={livros} />

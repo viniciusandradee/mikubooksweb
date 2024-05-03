@@ -44,8 +44,8 @@ export default async function Home() {
       </section>
 
       <section className="flex gap-4">
-        <Card>
-          <CardHeader>
+        <Card style={{ backgroundColor: 'white', color: 'black' }}>
+          <CardHeader >
             <BarChart />
             <h2 className="text-lg ml-2">Gastos Por Categoria</h2>
           </CardHeader>
@@ -53,7 +53,7 @@ export default async function Home() {
             <BarChartCategorias />
           </CardBody>
         </Card>
-        <Card>
+        <Card style={{ backgroundColor: 'white', color: 'black' }}>
           <CardHeader>
             <Calendar />
             <h2 className="text-lg ml-2">Gastos Por Mes</h2>

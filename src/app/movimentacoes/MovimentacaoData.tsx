@@ -51,8 +51,8 @@ export function MovimentacaoData({ movimentacoes, livros }: MovimentacaoDataProp
 
     return (
         <>
-            <section className="flex flex-col gap-4 bg-slate-800 w-4/5 max-w-[1024px] min-h-[565px] mt-4 p-6 rounded">
-                <div className="flex justify-between">
+            <section className="flex flex-col gap-4 bg-teal-500 w-4/5 max-w-[1024px] min-h-[565px] mt-4 p-6 rounded">
+                <div className="flex justify-between ">
                     <h2 className="text-2xl font-bold">Movimentações</h2>
                     <Link href="/movimentacoes/new">
                         <Button color="primary" startContent={<Plus />}>nova movimentação</Button>

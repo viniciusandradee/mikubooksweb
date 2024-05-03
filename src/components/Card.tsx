@@ -9,7 +9,7 @@ interface CardStatsProps {
 
 export default function CardStats({icon, title, value}: CardStatsProps) {
     return (
-        <Card className="max-w-[400px]">
+        <Card className="max-w-[400px]" style={{ backgroundColor: 'white', color: 'black' }}>
             <CardHeader className="flex gap-3">
                 <Icone nome={icon} />
                 <p className="text-md">{title}</p>

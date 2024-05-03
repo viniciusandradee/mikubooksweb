@@ -18,6 +18,7 @@ export async function create(prevState: any, formData: FormData){
         },
         data: formData.get("data"),
     }
+    console.log(data)
 
     const options = {
         method: "POST",

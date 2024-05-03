@@ -22,7 +22,7 @@ export function LivroSelect({livros, onChange}: LivroSelectProps) {
             onChange={onChange}
         >
             {(livro) => 
-                <SelectItem key={livro.nome} startContent={<Icone nome={livro.icone} />}>
+                <SelectItem key={livro.id} startContent={<Icone nome={livro.icone} />}>
                     {livro.nome}
                 </SelectItem>
             }

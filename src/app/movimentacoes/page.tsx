@@ -8,7 +8,7 @@ export default async function Movimentacoes() {
   const livros: Array<Livro> = await getLivros()
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen  flex-col items-center">
       <NavBar active="movimentacoes" />
 
       <MovimentacaoData 

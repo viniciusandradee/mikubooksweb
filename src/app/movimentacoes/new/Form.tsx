@@ -22,7 +22,7 @@ export function Form(props: { livros: Array<Livro> }) {
 
     const [state, formAction] = useFormState(create, initialState)
     return (
-        <form action={formAction} className="flex flex-col gap-3 m-6 bg-slate-900 rounded p-6 min-w-[500px]">
+        <form action={formAction} className="flex flex-col gap-3 m-6 bg-teal-500 rounded p-6 min-w-[500px]">
             <h2 className="text-2xl font-bold">Nova Movimentação</h2>
             <Input
                 key="descricao"
